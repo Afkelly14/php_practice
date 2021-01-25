@@ -43,3 +43,42 @@ echo strrev("Hello World!");
 $oldtxt = "Hello World";
 $newtxt = str_replace("World", "Dolly", $oldtxt);
 ?>
+
+//Multiply 10 with 5, and output the result.
+<?php
+echo 10 * 5;
+?>
+
+//Divide 10 by 2, and output the result.
+<?php
+echo 10 / 2;
+?>
+
+//Use the correct comparison operator to check if $a is equal to $b.
+<?php
+var_dump($a == $b);
+?>
+
+//Use the correct comparison operator to check if $a is NOT equal to $b.
+<?php
+var_dump($a != $b);
+?>
+
+//Output "Hello World" if $a is greater than $b.
+<?php
+$a = 50;
+$b = 10;
+if ($a > $b) {
+    echo "Hello world";
+}
+?>
+
+
+//Output "Hello World" if $a is NOT equal to $b.
+<?php
+$a = 50;
+$b = 20;
+if ($a != $b) {
+    echo "Hello World!";
+}
+?>
