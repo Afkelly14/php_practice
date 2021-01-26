@@ -82,3 +82,46 @@ if ($a != $b) {
     echo "Hello World!";
 }
 ?>
+
+
+//Output "Yes" if $a is equal to $b, otherwise output "No".
+<?php
+$a = 20;
+$b = 15;
+if ($a == $b) {
+    echo "Yes";
+} else {
+    echo "No";
+}
+?>
+
+//Output "1" if $a is equal to $b, 
+//print "2" if $a is greater than $b, otherwise output "3".
+<?php
+$a = 5;
+$b = 2;
+if ($a == $b) {
+    echo "1";
+} elseif ($a > $b) {
+    echo "2";
+} else {
+    echo "3";
+}
+?>
+
+//Create a switch statement that will output "Hello" if $color is "red", 
+//and "welcome" if $color is "green".
+<?php
+$color = "green";
+switch ($color) {
+    case "red":
+        echo "Hello";
+    break;
+    case "green":
+        echo "Welcome";
+    break;
+    default:
+        echo "Neither";
+}
+?>
+
