@@ -199,3 +199,37 @@ echo count($fruits);
 $fruits = array("Apple", "Banana", "Orange");
 echo $fruits[1];
 ?>
+
+//Create an associative array containing the age of Peter, Ben, Joe
+//Output the age of Ben
+<?php
+$age = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
+echo "Ben is ". $age['Ben']. "years old"
+?>
+
+
+//Loop through an associative array and output the key and the value
+<?php
+$age = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
+foreach($age as $x => $y) {
+    echo "Key=". $x . ", Value = " . $y;
+}
+?>
+
+//Use the correct array method to sort the $colors array alphabetically.
+<?php
+$colors = array("red", "green", "blue", "yellow");
+sort($colors);
+?>
+
+//Use the correct array method to sort the $colors array descending alphabetically.
+<?php
+$colors = array("red", "green", "blue", "yellow");
+rsort($colors);
+?>
+
+//Use the correct array method to sort the $age array according to the values.
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort($age);
+?>
