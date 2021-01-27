@@ -125,3 +125,77 @@ switch ($color) {
 }
 ?>
 
+//Loops
+
+//Output $i as long as $i is less than 6
+
+<?php
+$i = 1;
+while ($i < 6) {
+    echo $i;
+    $i++;
+}
+?>
+
+//Output $i as long as $i is less than 6
+<?php 
+$i = 1;
+do {
+    echo $i;
+    $i++;
+} while ($i <6);
+?>
+
+//Create a loop that runs from 0 to 9
+
+<?php
+for ($i = 0; $i < 10; $i++) {
+    echo $i;
+}
+?>
+
+//loop through the items in the $color array
+
+<?php
+$colors = array("red", "green", "blue", "yellow");
+foreach($colors as $x) {
+    echo $x;
+}
+?>
+
+//create a function named myFunction
+
+<?php
+function myFunction(){
+    echo "Hello World";
+}
+
+myFunction();
+?>
+
+
+//Inside a function with two parameters, print the first parameter
+<?php
+function myFunction($fname, $lname) {
+    echo $fname;
+}
+?>
+
+//return the second value
+<?php
+function myFunction($fname, $lname) {
+    return $lname;
+}
+?>
+
+//use the correct function to output the number of items in an array
+<?php
+$fruits = array("Apple", "Banana", "Orange");
+echo count($fruits);
+?>
+
+//Output the second item in the $fruits array
+<?php
+$fruits = array("Apple", "Banana", "Orange");
+echo $fruits[1];
+?>
