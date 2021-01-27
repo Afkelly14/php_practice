@@ -176,14 +176,14 @@ myFunction();
 
 //Inside a function with two parameters, print the first parameter
 <?php
-function myFunction($fname, $lname) {
+function parameterFunction($fname, $lname) {
     echo $fname;
 }
 ?>
 
 //return the second value
 <?php
-function myFunction($fname, $lname) {
+function secondParameterFunction($fname, $lname) {
     return $lname;
 }
 ?>
